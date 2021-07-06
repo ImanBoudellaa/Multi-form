@@ -1,11 +1,16 @@
 import React, { Component } from 'react'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import AppBar from 'material-ui/AppBar'
 
 export class Success extends Component {
   render() {
     return (
-      <div>
-        <h1>Succesfully saved</h1>
-      </div>
+      <MuiThemeProvider>
+        <>
+          <AppBar title="Succesfully saved"></AppBar>
+          <h1>Thank you for submission</h1>
+        </>
+      </MuiThemeProvider>
     )
   }
 }
